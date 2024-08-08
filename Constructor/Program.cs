@@ -8,7 +8,8 @@
     //this constructor creates a default object with predefined values, doesnt take any parameters:
     public Baby()
     {
-        birthDate = new DateTime(2014, 4, 21);
+        Console.WriteLine("Ingaaa");
+        birthDate = DateTime.Now;
         Name = "ali";
         LastName = "veli"; // Varsayılan olarak 2020 yılı atandı
     }
@@ -16,7 +17,8 @@
     //this constructor takes two parameters and creates an object with given parameters:
     public Baby(string name, string lastName)
     {
-        birthDate = new DateTime(2014, 4, 21);
+        Console.WriteLine("Ingaaa");
+        birthDate = DateTime.Now;
         Name = name;
         LastName = lastName;
     }
