@@ -5,20 +5,20 @@
     public string LastName;
 
     // Constructors:
-    /*
+    //this constructor creates a default object with predefined values, doesnt take any parameters:
     public Baby()
     {
         birthDate = new DateTime(2014, 4, 21);
-        Name = "sinan";
-        LastName = "senkul"; // Varsayılan olarak 2020 yılı atandı
+        Name = "ali";
+        LastName = "veli"; // Varsayılan olarak 2020 yılı atandı
     }
-    */
 
+    //this constructor takes two parameters and creates an object with given parameters:
     public Baby(string name, string lastName)
     {
         birthDate = new DateTime(2014, 4, 21);
         Name = name;
-        LastName = lastName; // Varsayılan olarak 2020 yılı atandı
+        LastName = lastName;
     }
 }
 
@@ -27,8 +27,9 @@ class Program
     static void Main(string[] args)
     {
         // Creating a baby object with two different constructors:
-        //Baby newBaby = new Baby(); //this one is with the no-parameter constructor. 
-        Baby newBaby = new Baby("sinan", "şenkul");
-        Console.WriteLine($"new baby's name: {newBaby.Name} and lastname: {newBaby.LastName} and birth date: {newBaby.birthDate}");
+        Baby newBaby1 = new Baby(); //this one is with the no-parameter constructor. 
+        Baby newBaby2 = new Baby("sinan", "şenkul");
+        Console.WriteLine($"new baby's name: {newBaby1.Name} and lastname: {newBaby1.LastName} and birth date: {newBaby1.birthDate}");
+        Console.WriteLine($"new baby's name: {newBaby2.Name} and lastname: {newBaby2.LastName} and birth date: {newBaby2.birthDate}");
     }
 }
